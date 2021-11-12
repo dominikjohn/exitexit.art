@@ -1,28 +1,39 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>exitexit.art</h1>
+    <div class="max-width">
+      <ChatContainer/>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ChatContainer from './components/ChatContainer.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ChatContainer
   }
 }
 </script>
 
 <style>
+html, body, #app {
+  background-color: #380538;
+  color: #fff;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   margin-top: 60px;
+}
+.max-width {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>

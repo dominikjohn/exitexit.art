@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>exitexit.art</h1>
+    <img src="./assets/exit_logo_transparent.png" width="150" />
     <div class="max-width">
       <ChatContainer/>
     </div>
@@ -19,20 +19,22 @@ export default {
 </script>
 
 <style>
-html, body, #app {
-  background-color: #380538;
-  color: #fff;
-}
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 20px;
 }
 .max-width {
-  max-width: 600px;
+  margin-top: 30px;
+  background-color: #380538;
+  color: #fff;
+  max-width: 550px;
+  height: 550px;
+  padding: 35px;
+  overflow-y: scroll;
   margin-left: auto;
   margin-right: auto;
 }

@@ -86,11 +86,13 @@ export default {
 .align-msg-left {
   float: left;
   text-align: left;
+  border-radius: 15px 15px 15px 0px;
 }
 
 .align-msg-right {
   float: right;
   text-align: right;
+  border-radius: 15px 15px 0px 15px;
 }
 
 .color-cyan {
@@ -99,16 +101,15 @@ export default {
 }
 
 .color-rose {
-  background-color: #f662ab;
-  color: #fff;
-}
-
-.color-yellow {
-  background-color: #FFFF00;
+  /*background-color: #f662ab;*/
+  background-color: #8fe5cf;
+  /*color: #fff;*/
   color: #000;
 }
 
-.message-left {
-  border-radius: 15px 15px 15px 0px;
+.color-yellow {
+  /*background-color: #FFFF00;*/
+  background-color: #00ff90;
+  color: #000;
 }
 </style>

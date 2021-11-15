@@ -2,8 +2,10 @@
   <div id="app">
     <img src="./assets/exit_logo_transparent.png" width="150" />
     <div class="max-width">
-      <ChatContainer/>
+      <ChatContainer id="chatcontainer" ref="chatcontainer" class="chat" />
     </div>
+    <br />
+    <p><a href="/info">Mehr Infos</a> | <a href="/impressum">Impressum</a></p>
   </div>
 </template>
 
@@ -14,12 +16,14 @@ export default {
   name: 'App',
   components: {
     ChatContainer
+  },
+  mounted() {
+    this.$refs.chatcontainer.scrollTo(300)
   }
 }
 </script>
 
 <style>
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

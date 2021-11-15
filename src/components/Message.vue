@@ -70,7 +70,7 @@ export default {
 .time {
   font-size: 12px;
   text-align: left;
-  color: #fff;
+  color: #000;
 }
 
 .align-msg-left .time {

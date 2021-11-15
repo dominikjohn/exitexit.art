@@ -11,14 +11,7 @@
     <p><strong>Kontakt:</strong> <br>
       Telefon: 01234-789456<br>
       Fax: 1234-56789<br>
-      E-Mail: <a href='mailto:max@muster.de'>max@muster.de</a></br></p>
-    <p><strong>Umsatzsteuer-ID: </strong> <br>
-      Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz: Musterustid.<br><br>
-      <strong>Wirtschafts-ID: </strong><br>
-      Musterwirtschaftsid<br>
-    </p>
-    <p><strong>Aufsichtsbehörde:</strong><br>
-      Musteraufsicht Musterstadt<br></p>
+      E-Mail: <a href='mailto:max@muster.de'>max@muster.de</a></p>
     <p><strong>Haftungsausschluss: </strong><br><br><strong>Haftung für Inhalte</strong><br><br>
       Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und
       Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG
@@ -77,7 +70,7 @@
 
 <script>
 export default {
-  name: "index.vue"
+  name: "Impressum.vue"
 }
 </script>
 

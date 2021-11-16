@@ -6,11 +6,13 @@
         <ChatContainer id="chatcontainer" ref="chatcontainer" class="chat"/>
       </div>
       <div v-if="showImpressum && !showMore">
-        <a href="#" @click="backFunction" class="backbutton">&laquo; Zurück</a>
+        <a href="#" @click="backFunction" class="backbutton">&laquo; Zurück</a><br /><br />
         <Impressum/>
+        <br />
+        <a href="#" @click="backFunction" class="backbutton">&laquo; Zurück</a><br/>
       </div>
       <div v-if="showMore && !showImpressum">
-        <a href="#" @click="backFunction" class="backbutton">&laquo; Zurück</a><br/><br/><br/>
+        <a href="#" @click="backFunction" class="backbutton">&laquo; Zurück</a><br/><br/>
         <div style="background-color: #fff; text-align: left; padding: 15px;">
           <p>
             <i>Im Exit liegt das Aus- und das Einsteigen. Im Exit
@@ -61,10 +63,12 @@
             Medien im Rahmen von NEUSTART KULTUR.</p>
           <img src="./assets/fond.png" width="50%"/>
         </div>
+        <br />
+        <a href="#" @click="backFunction" class="backbutton">&laquo; Zurück</a><br/><br/>
       </div>
     </div>
     <br/>
-    <p><a href="#" @click="showMoreFunction">Mehr Infos</a> | <a href="#" @click="showImpressumFunction">Impressum</a>
+    <p><a href="#" @click="showMoreFunction"><u>Mehr Infos</u></a> <br /><small><a href="#" @click="showImpressumFunction">Impressum</a></small>
     </p>
   </div>
 </template>
@@ -113,7 +117,6 @@ export default {
 
 a {
   color: #000 !important;
-
 }
 
 .max-width {
@@ -123,10 +126,17 @@ a {
   color: #000;
   max-width: 550px;
   height: 700px;
-  padding: 35px;
+  padding: 15px;
   overflow-y: scroll;
   margin-left: auto;
   margin-right: auto;
+}
+
+.backbutton {
+  background-color: #00FFBC;
+  text-align: center;
+  padding: 5px 15px 5px 15px;
+  border-radius: 15px 15px 15px 0px;
 }
 
 @media only screen and (min-width: 680px) {

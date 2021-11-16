@@ -22,25 +22,25 @@ export default {
   methods: {
     formatTime(string) {
       console.log(moment.utc(string * 1000))
-      return moment.utc(string * 1000).add(moment.duration(1, 'hours')).format('d.M.YY, hh:mm') + ' Uhr'
+      return moment.utc(string * 1000).add(moment.duration(1, 'hours')).format('DD.M.YY, hh:mm') + ' Uhr'
     }
   },
   computed: {
     messageColorClass() {
-      if (this.message.person === 1) {
+      if (this.message.person === 2) {
         return 'color-cyan align-msg-left';
-      } else if (this.message.person === 2) {
-        return 'color-rose align-msg-right';
+      } else if (this.message.person === 3) {
+        return 'color-rose align-msg-left';
       }
-      return 'color-yellow align-msg-left'
+      return 'color-yellow align-msg-right'
     },
     messageAlignmentClass() {
-      if (this.message.person === 1) {
+      if (this.message.person === 2) {
         return 'align-msg-left';
-      } else if (this.message.person === 2) {
-        return 'align-msg-right';
+      } else if (this.message.person === 3) {
+        return 'align-msg-left';
       }
-      return 'align-msg-left'
+      return 'align-msg-right'
     },
   }
 }
@@ -51,7 +51,7 @@ export default {
   background-color: #00FFBC;
   padding-top: 10px;
   margin-bottom: 5px;
-  width: 330px;
+  width: 280px;
 }
 
 .message-body p {
@@ -97,22 +97,22 @@ export default {
 
 .color-cyan {
   /*background-color: #00FFBC;*/
-  background-color: #167C74;
-  color: #fff;
+  background-color: #00FFFF;
+  color: #000;
 }
 
 .color-rose {
   /*background-color: #f662ab;*/
   /*background-color: #8fe5cf;*/
-  background-color: #00B2B2;
+  background-color: #008399;
   /*color: #fff;*/
-  color: #000;
+  color: #fff;
 }
 
 .color-yellow {
   /*background-color: #FFFF00;*/
   /*background-color: #00ff90;*/
-  background-color: #00FFD3;
+  background-color: #00FFCC;
   color: #000;
 }
 </style>

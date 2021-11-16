@@ -1,17 +1,13 @@
 <template>
-  <div class='impressum'><h1>Impressum</h1>
+  <div class='impressum' style="background-color: #fff; padding: 15px;"><h2>Impressum</h2>
     <p>Angaben gemäß § 5 TMG</p>
-    <p>Max Muster <br>
-      Musterweg<br>
-      12345 Musterstadt <br>
-    </p>
-    <p><strong>Vertreten durch: </strong><br>
-      Max Muster<br>
+    <p>Isabella Sedlak<br>
+      Görlitzer Straße 50<br>
+      10997 Berlin<br>
     </p>
     <p><strong>Kontakt:</strong> <br>
-      Telefon: 01234-789456<br>
-      Fax: 1234-56789<br>
-      E-Mail: <a href='mailto:max@muster.de'>max@muster.de</a></p>
+      Telefon: +49 89 71691309<br>
+      E-Mail: kontakt&nbsp;[at]&nbsp;exitexit.art</p>
     <p><strong>Haftungsausschluss: </strong><br><br><strong>Haftung für Inhalte</strong><br><br>
       Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und
       Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG

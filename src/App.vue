@@ -1,19 +1,66 @@
 <template>
   <div id="app">
-    <a href="#"><img src="./assets/exit_logo2_transparent.png" width="150" @click="backFunction"/></a>
+    <a href="#"><img src="./assets/exit_logo2_transparent.png" width="120" @click="backFunction"/></a><br/><br/>
     <div class="max-width">
       <div v-if="!showImpressum && !showMore">
         <ChatContainer id="chatcontainer" ref="chatcontainer" class="chat"/>
       </div>
       <div v-if="showImpressum && !showMore">
-        <a href="#" @click="backFunction">&laquo; Zurück</a>
+        <a href="#" @click="backFunction" class="backbutton">&laquo; Zurück</a>
         <Impressum/>
       </div>
       <div v-if="showMore && !showImpressum">
-        <a href="#" @click="backFunction">&laquo; Zurück</a><br/><br/><br/>
-        <p>Gefördert vom Fonds Darstellende Künste aus Mitteln der Beauftragten der Bundesregierung für Kultur und
-          Medien im Rahmen von NEUSTART KULTUR.</p>
-        <img src="./assets/fond.png" width="50%"/>
+        <a href="#" @click="backFunction" class="backbutton">&laquo; Zurück</a><br/><br/><br/>
+        <div style="background-color: #fff; text-align: left; padding: 15px;">
+          <p>
+            <i>Im Exit liegt das Aus- und das Einsteigen. Im Exit
+              tauchen Gedanken und Geschichten noch einmal kurz auf,
+              bevor sie losgelassen werden. Im Exit kann man nichts festhalten. Im Exit passiert Transformation. Im Exit
+              findet man den luftleeren Raum. Das klingt romantisch. Im Exit wird fragmentiert, neu geordnet und
+              sortiert.
+              Im Exit liegt die Hoffnung auf paradiesische, neue Zustände. Das kann’s doch nicht gewesen sein.</i></p>
+
+          <p>Die drei Künstlerinnen - Isabella Sedlak (Regisseurin und Autorin), Karolina Serafin (Videokünstlerin) und
+            Hanna Lenz (Szenografin) - erarbeiten interdisziplinär über mehrere Wochen ein Baukastensystem für Text und
+            Sprache. Ein sich ständig wandelndes “Ich” begibt sich auf eine Reise durch alltägliche und fantastische
+            Welten, wechselt schamlos zwischen der Analyse von Arbeitsbedingungen für freischaffende
+            Theaterkünstler:innen
+            und Komfortzonen-Abriss-Plänen. In ihrem Projekt “EXIT” erweitern die Künstlerinnen die Grenzen ihrer
+            jeweiligen Disziplinen und entwickeln eine experimentelle und spielerische Praxis der künstlerischen
+            Zusammenarbeit.</p>
+
+          <p>Vom 26. bis 28. November 2021 kann das Publikum die performative Rauminstallation besuchen, in der die
+            Künstlerinnen weiter sortieren, zerstückeln und neu organisieren. Einen ersten Einblick in die Arbeit gibt
+            es
+            auf www.exitexit.art und auf Instagram @exitexit.art</p>
+
+          <p>Öffnungszeiten:<br/>
+            26. Nov 16-21 Uhr<br/>
+            27. Nov 14-21 Uhr<br/>
+            28. Nov 14-19 Uhr<br/>
+          </p>
+          <p>
+            @ Premarts, Oppelner Str. 34, 10997 Berlin</p>
+          <p>
+
+            Konzept, Performance, Installation Isabella Sedlak, Karolina Serafin, Hanna Lenz<br /><br />
+
+            Produktionsleitung Florian Meyer<br /><br />
+
+            Webgestaltung Dominik John / <a target="_blank" href="www.polyidea.de"><u>polyidea</u></a><br /><br />
+
+            Social Media / PR Felicitas Wetzel<br /><br />
+
+            Dokumentation Regina Teichs<br /><br />
+
+            Auf Grund der aktuellen Corona Lage gilt auch bei dieser Veranstaltung die 2G Regel.
+            Zusätzlich möchten wir Besucher:innen bitten, Masken zu tragen.
+            Die Künstler:innen werden täglich getestet.</p>
+          <p>Gef&ouml;rdert vom Fonds Darstellende Künste aus Mitteln der Beauftragten der Bundesregierung für Kultur
+            und
+            Medien im Rahmen von NEUSTART KULTUR.</p>
+          <img src="./assets/fond.png" width="50%"/>
+        </div>
       </div>
     </div>
     <br/>
@@ -71,14 +118,21 @@ a {
 
 .max-width {
   margin-top: 30px;
-  background-image: url('assets/exit_bg2_grüngelb-03-03.png');
+  background-image: url('assets/exit_bg5-03.png');
   background-size: 100% 100%;
   color: #000;
   max-width: 550px;
-  height: 550px;
+  height: 700px;
   padding: 35px;
   overflow-y: scroll;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media only screen and (min-width: 680px) {
+  .max-width {
+    position: relative;
+    right: 35px;
+  }
 }
 </style>

@@ -2,8 +2,6 @@
   <div>
     <br />
     <Message v-for="message in messages" :key="message.id" :message="message" />
-    <Message v-for="message in messages" :key="message.id" :message="message" />
-    <Message v-for="message in messages" :key="message.id" :message="message" />
   </div>
 </template>
 

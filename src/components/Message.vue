@@ -1,7 +1,7 @@
 <template>
   <div :class="messageAlignmentClass">
     <div class="message-body message-left" :class="messageColorClass">
-      <h5>Person {{ message.person }}</h5>
+      <h5>Ich {{ message.person }}</h5>
       <p>{{ message.text }}</p>
     </div>
     <p class="time">{{ formatTime(message.zeit.seconds) }}</p>
@@ -96,20 +96,23 @@ export default {
 }
 
 .color-cyan {
-  background-color: #00FFBC;
-  color: #000;
+  /*background-color: #00FFBC;*/
+  background-color: #167C74;
+  color: #fff;
 }
 
 .color-rose {
   /*background-color: #f662ab;*/
-  background-color: #8fe5cf;
+  /*background-color: #8fe5cf;*/
+  background-color: #00B2B2;
   /*color: #fff;*/
   color: #000;
 }
 
 .color-yellow {
   /*background-color: #FFFF00;*/
-  background-color: #00ff90;
+  /*background-color: #00ff90;*/
+  background-color: #00FFD3;
   color: #000;
 }
 </style>

@@ -1,22 +1,24 @@
 <template>
   <div id="app">
-    <img src="./assets/exit_logo2_transparent.png" width="150"/>
+    <a href="#"><img src="./assets/exit_logo2_transparent.png" width="150" @click="backFunction"/></a>
     <div class="max-width">
       <div v-if="!showImpressum && !showMore">
         <ChatContainer id="chatcontainer" ref="chatcontainer" class="chat"/>
       </div>
       <div v-if="showImpressum && !showMore">
         <a href="#" @click="backFunction">&laquo; Zurück</a>
-        <Impressum />
+        <Impressum/>
       </div>
       <div v-if="showMore && !showImpressum">
-        <a href="#" @click="backFunction">&laquo; Zurück</a><br /><br /><br />
-        <p>Gefördert vom Fonds Darstellende Künste aus Mitteln der Beauftragten der Bundesregierung für Kultur und Medien im Rahmen von NEUSTART KULTUR.</p>
-        <img src="./assets/fond.png" width="50%" />
+        <a href="#" @click="backFunction">&laquo; Zurück</a><br/><br/><br/>
+        <p>Gefördert vom Fonds Darstellende Künste aus Mitteln der Beauftragten der Bundesregierung für Kultur und
+          Medien im Rahmen von NEUSTART KULTUR.</p>
+        <img src="./assets/fond.png" width="50%"/>
       </div>
     </div>
     <br/>
-    <p><a href="#" @click="showMoreFunction">Mehr Infos</a> | <a href="#" @click="showImpressumFunction">Impressum</a></p>
+    <p><a href="#" @click="showMoreFunction">Mehr Infos</a> | <a href="#" @click="showImpressumFunction">Impressum</a>
+    </p>
   </div>
 </template>
 
@@ -70,6 +72,7 @@ a {
 .max-width {
   margin-top: 30px;
   background-image: url('assets/exit_bg2_grüngelb-03-03.png');
+  background-size: 100% 100%;
   color: #000;
   max-width: 550px;
   height: 550px;

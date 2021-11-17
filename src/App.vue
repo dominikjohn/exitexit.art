@@ -6,9 +6,9 @@
         <ChatContainer id="chatcontainer" ref="chatcontainer" class="chat"/>
       </div>
       <div v-if="showImpressum && !showMore">
-        <a href="#" @click="backFunction" class="backbutton">&laquo; Zurück</a><br /><br />
+        <a href="#" @click="backFunction" class="backbutton">&laquo; Zurück</a><br/><br/>
         <Impressum/>
-        <br />
+        <br/>
         <a href="#" @click="backFunction" class="backbutton">&laquo; Zurück</a><br/>
       </div>
       <div v-if="showMore && !showImpressum">
@@ -42,33 +42,53 @@
             28. Nov 14-19 Uhr<br/>
           </p>
           <p>
-            @ Premarts, Oppelner Str. 34, 10997 Berlin</p>
+            @ PremArts, Oppelner Str. 34, 10997 Berlin</p>
           <p>
 
-            Konzept, Performance, Installation Isabella Sedlak, Karolina Serafin, Hanna Lenz<br /><br />
+            Konzept, Performance, Installation Isabella Sedlak, Karolina Serafin, Hanna Lenz<br/><br/>
 
-            Produktionsleitung Florian Meyer<br /><br />
+            Produktionsleitung Florian Meyer<br/><br/>
 
-            Webgestaltung Dominik John / <a target="_blank" href="www.polyidea.de"><u>polyidea</u></a><br /><br />
+            Webgestaltung Dominik John / <a target="_blank" href="www.polyidea.de"><u>polyidea</u></a><br/><br/>
 
-            Social Media / PR Felicitas Wetzel<br /><br />
+            Social Media / PR Felicitas Wetzel<br/><br/>
 
-            Dokumentation Regina Teichs<br /><br />
+            Dokumentation Regina Teichs<br/><br/>
 
             Auf Grund der aktuellen Corona Lage gilt auch bei dieser Veranstaltung die 2G Regel.
             Zusätzlich möchten wir Besucher:innen bitten, Masken zu tragen.
             Die Künstler:innen werden täglich getestet.</p>
+          <small><p>
+            The three artists - Isabella Sedlak (director and author), Karolina Serafin (video artist) and Hanna Lenz
+            (scenographer) - create an interdisciplinary modular system for text and language over several weeks. A
+            constantly changing "I" embarks on a journey through everyday and fantastic worlds, shamelessly alternating
+            between the analysis of working conditions for freelance theater artists and comfort-zone-demolition-plans.
+            In their project "EXIT" the artists expand the boundaries of their respective disciplines and develop an
+            experimental and playful practice of artistic collaboration.</p>
+
+            <p>On November 26.-28. 2021, the public can visit the performance installation in which the artists continue
+              to
+              sort, dismantle, and reorganize. For a sneak peek of the work, visit exitexit.art or Instagram
+              @exitexit.art</p>
+
+            <p>Opening hours and place: see above</p>
+
+            <p>Due to the current Corona situation, the 2G rule also applies at this event.
+              Additionally we would like to ask visitors to wear masks. The artists will be tested daily.
+
+            </p></small>
           <p>Gef&ouml;rdert vom Fonds Darstellende Künste aus Mitteln der Beauftragten der Bundesregierung für Kultur
             und
             Medien im Rahmen von NEUSTART KULTUR.</p>
           <img src="./assets/fond.png" width="50%"/>
         </div>
-        <br />
+        <br/>
         <a href="#" @click="backFunction" class="backbutton">&laquo; Zurück</a><br/><br/>
       </div>
     </div>
     <br/>
-    <p><a href="#" @click="showMoreFunction"><u>Mehr Infos</u></a> <br /><small><a href="#" @click="showImpressumFunction">Impressum</a></small>
+    <p><a href="#" @click="showMoreFunction"><u>Mehr Infos</u></a> <br/><small><a href="#"
+                                                                                  @click="showImpressumFunction">Impressum</a></small>
     </p>
   </div>
 </template>
@@ -137,12 +157,5 @@ a {
   text-align: center;
   padding: 5px 15px 5px 15px;
   border-radius: 15px 15px 15px 0px;
-}
-
-@media only screen and (min-width: 680px) {
-  .max-width {
-    position: relative;
-    right: 35px;
-  }
 }
 </style>

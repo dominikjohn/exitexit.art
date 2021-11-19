@@ -91,7 +91,7 @@ export default {
 
 .align-msg-right {
   float: right;
-  text-align: right;
+  text-align: left;
   border-radius: 15px 15px 0px 15px;
 }
 

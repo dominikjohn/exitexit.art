@@ -14,6 +14,9 @@
       <div v-if="showMore && !showImpressum">
         <a href="#" @click="backFunction" class="backbutton">&laquo; Zurück</a><br/><br/>
         <div style="background-color: #fff; text-align: left; padding: 15px;">
+
+          <iframe src="https://player.vimeo.com/video/671639688?h=4425c86e25" style="width: 100%; height: 300px;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          <p><a href="https://vimeo.com/671639688">EXIT Performance Installation 2021</a> from <a href="https://vimeo.com/karoserafin">Karolina Serafin</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
           <p>
             <i>Im Exit liegt das Aus- und das Einsteigen. Im Exit
               tauchen Gedanken und Geschichten noch einmal kurz auf,
@@ -122,7 +125,7 @@ export default {
       this.showMore = false
       this.showImpressum = false
     }
-  }
+  },
 }
 </script>
 

@@ -21,7 +21,6 @@ export default {
   },
   methods: {
     formatTime(string) {
-      console.log(moment.utc(string * 1000))
       return moment.utc(string * 1000).add(moment.duration(1, 'hours')).format('DD.M.YY, HH:mm') + ' Uhr'
     }
   },
